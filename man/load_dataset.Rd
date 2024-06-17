@@ -2,13 +2,13 @@
 % Please edit documentation in R/load_pba2024.R
 \name{load_dataset}
 \alias{load_dataset}
-\title{loads the PBA Tour 2024 player analysis from an excel file}
+\title{load_dataset()}
 \usage{
 load_dataset()
 }
 \value{
-Loads the PBA Tour 2024 dataset.
+(the tibble)
 }
 \description{
-using readxl
+Loads the PBA Tour 2024 player analysis from an excel file.
 }

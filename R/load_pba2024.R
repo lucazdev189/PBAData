@@ -1,8 +1,8 @@
-#' loads the PBA Tour 2024 player analysis from an excel file
+#' load_dataset()
 #'
-#' using readxl
+#' Loads the PBA Tour 2024 player analysis from an excel file.
 #'
-#' @return Loads the PBA Tour 2024 dataset.
+#' @return (the tibble)
 #' @importFrom readxl read_excel
 #' @export
 load_dataset <- function() {
