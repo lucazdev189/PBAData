@@ -4,7 +4,7 @@ Title: Adds PBA datasets and functions
 Version: 0.1.0
 Author: lucazdev189
 Maintainer: Lucas E <erinlucaspogi@outlook.com>
-Description: Adds PBA Bowling-related datasets and functions to make analysis easier
+Description: Adds PBA Bowling-related datasets and functions to make analyses easier and more efficient
 License: None
 Encoding: UTF-8
 LazyData: true
