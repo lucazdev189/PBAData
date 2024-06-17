@@ -1,11 +1,11 @@
 # PBAData - the package for bowling
 Out of boredom, I have decided to make this simple package that gives everyone an easy way to access bowling data.
 
-### Installing the package
+## Installing the package
 `library(devtools)
 install_github("lucazdev189/PBAData")`
 
-## Initializing the PBA Tour 2024 dataset
+### Initializing the PBA Tour 2024 dataset
 Using the load_pba2024() function, you are able to do this.
 
 And you may further play around with the dataset by doing this,
