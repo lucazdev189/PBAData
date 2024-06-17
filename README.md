@@ -9,4 +9,4 @@ install_github("lucazdev189/PBAData")```
 Using the load_pba2024() function, you are able to do this.
 
 And you may further play around with the dataset by doing this,
-`PBA2024 <- load_pba2024()`
+```PBA2024 <- load_pba2024()```
