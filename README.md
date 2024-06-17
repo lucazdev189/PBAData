@@ -1,5 +1,4 @@
 # PBAData - the package for bowling
-**made by lucazdev189**
 Out of boredom, I have decided to make this simple package that gives everyone an easy way to access bowling data.
 
 ## Initializing the PBA Tour 2024 dataset
