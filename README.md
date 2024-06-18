@@ -1,5 +1,5 @@
 # PBAData - the package for bowling
-Out of boredom, I have decided to make this simple package that gives everyone an easy way to access bowling data.
+Out of boredom, I have decided to make this simple package that gives everyone an easy way to access Professional Bowlers Association data.
 
 ## Installing the package
 ```
