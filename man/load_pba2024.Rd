@@ -10,5 +10,6 @@ load_pba2024()
 (the tibble)
 }
 \description{
-Loads the PBA Tour 2024 player analysis from an excel file.
+Loads the PBA Tour 2024 player analysis from an excel file. Note that this data comes
+from the year 2023.
 }
