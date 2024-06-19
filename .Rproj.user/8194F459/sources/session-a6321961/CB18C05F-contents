@@ -1,0 +1,24 @@
+#' compare_players()
+#' 
+#' Creates a scatterplot comparing the chosen factor betweeen n players
+#' 
+#' @param dataset The dataset containing player data.
+#' @param chfactor Factor to be compared.
+#' @param player Players to be compared factors with.
+#' @return A scatterplot comparing the chosen factor between players.
+#' @importFrom dplyr filter select %>%
+#' @export
+compare_players <- function (dataset, chfactor, player) {
+  chosen_player <- dataset %>%
+    dplyr::filter(Name %in% player) %>%
+    dplyr::select(Name, chfactor = !!rlang::sym(chfactor))
+  
+  plot(
+    x = as.numeric(chosen_player$Name),
+    y = chosen_player$chfactor,
+    main = "Comparison of Players",
+    ylab = chfactor,
+    xlab = "Player",
+    col = "green"
+  )
+}
