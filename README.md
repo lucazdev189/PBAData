@@ -14,5 +14,5 @@ Using the load_pba2023() function, you are able to do this.
 
 And you may further play around with the dataset by doing this,
 ```
-PBA2024 <- load_pba2023()
+PBA2023 <- load_pba2023()
 ```
