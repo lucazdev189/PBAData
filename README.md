@@ -7,10 +7,10 @@ library(devtools)
 install_github("lucazdev189/PBAData")
 ```
 
-### Initializing the PBA Tour 2024 dataset
-Using the load_pba2024() function, you are able to do this.
+### Initializing the PBA Tour 2023 dataset
+Using the load_pba2023() function, you are able to do this.
 
 And you may further play around with the dataset by doing this,
 ```
-PBA2024 <- load_pba2024()
+PBA2024 <- load_pba2023()
 ```
