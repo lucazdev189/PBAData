@@ -1,0 +1,49 @@
+# R/dataset_pba2023.R
+
+#' Download PBA Tour 2023 Dataset
+#'
+#' Downloads the PBA Tour 2023 dataset if not already downloaded.
+#'
+#' @param folder_path Path to download the dataset file.
+#' @export
+download_pba2023 <- function(folder_path) {
+  # Check if the file is already downloaded
+  if (file.exists(file.path(folder_path, "pba2023.rda"))) {
+    invisible()
+  } else {
+    # Download the file (replace with actual download code)
+    download.file("https://example.com/pba2023.csv", 
+                  destfile = file.path(folder_path, "pba2023.csv"))
+    # Convert to .rda
+    pba2023 <- read.csv(file.path(folder_path, "pba2023.csv"))
+    saveRDS(pba2023, file.path(folder_path, "pba2023.rds"))
+  }
+}
+
+#' Process PBA Tour 2023 Dataset
+#'
+#' Processes the downloaded PBA Tour 2023 dataset into a tidy tibble.
+#'
+#' @param folder_path Path to the downloaded dataset file.
+#' @param name_path Path where the processed data should be saved.
+#' @export
+process_pba2023 <- function(folder_path, name_path) {
+  # Load the dataset
+  pba2023 <- readRDS(file.path(folder_path, "pba2023.rds"))
+  
+  # Additional processing if needed
+  # For example, converting to a tidy tibble
+  tidy_pba2023 <- as_tibble(pba2023)
+  
+  # Save the processed data
+  saveRDS(tidy_pba2023, file.path(name_path, "pba2023_processed.rds"))
+}
+
+#' Dataset Function for PBA Tour 2023 Dataset
+#'
+#' Loads the processed PBA Tour 2023 dataset.
+#'
+#' @export
+dataset_pba2023 <- function() {
+  loadRDS(system.file("extdata", "pba2023_processed.rds", package = "PBAData"))
+}
