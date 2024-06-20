@@ -2,7 +2,7 @@ library(PBAData)
 library(dplyr)
 
 test_that("returns correct stuff", {
-  pba <- load_pba2024()
+  pba <- load_pba2023()
   byscript <- above_avg(pba, "Anthony Simonsen", "Titles")
   
   manual_calc <- pba %>%

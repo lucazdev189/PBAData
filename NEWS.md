@@ -1,3 +1,8 @@
+# PBAData 0.1.4
+
+## Major Changes
+* Added new dataset, PBA Senior US Open 2024. Load using load_pbaseniorsusopen2024().
+
 # PBAData 0.1.3
 
 ## Major Changes
