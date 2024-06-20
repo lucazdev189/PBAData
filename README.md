@@ -1,5 +1,8 @@
 # PBAData - the package for bowling
-[![](https://img.shields.io/github/last-commit/lucazdev189/PBAData.svg)](https://github.com/lucazdev189/PBAData/commits/main)  
+[![](https://img.shields.io/github/last-commit/lucazdev189/PBAData.svg)](https://github.com/lucazdev189/PBAData/commits/main)
+[![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+[![](https://img.shields.io/github/languages/code-size/lucazdev189/PBAData.svg)](https://github.com/lucazdev189/PBAData)
+[![License: CC-BY-4.0](https://img.shields.io/badge/license-CC--BY--4.0-blue.svg)](https://cran.r-project.org/web/licenses/CC-BY-4.0)  
 Out of boredom, I have decided to make this simple package that gives everyone an easy way to access Professional Bowlers Association data.
 
 ## Installing the package
