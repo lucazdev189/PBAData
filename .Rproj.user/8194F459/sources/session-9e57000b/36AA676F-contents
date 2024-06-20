@@ -5,7 +5,7 @@
 #' @param dataset Dataset to be used to get data.
 #' @param player Player to be analyzed.
 #' @param chfactor Chosen factor to be compared.
-#' @importFrom dplyr filter summarize %>%
+#' @importFrom dplyr filter select %>%
 #' @return How far the player is from the avg by negative/positive numbers.
 #' @export
 above_avg <- function(dataset, player, chfactor) {
