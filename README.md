@@ -1,6 +1,5 @@
 # PBAData - the package for bowling
 [![](https://img.shields.io/github/last-commit/lucazdev189/PBAData.svg)](https://github.com/lucazdev189/PBAData/commits/main)  
-![PBAData Logo](https://i.ibb.co/RyT38vj/PBA.jpg)  
 Out of boredom, I have decided to make this simple package that gives everyone an easy way to access Professional Bowlers Association data.
 
 ## Installing the package
@@ -16,3 +15,4 @@ And you may further play around with the dataset by doing this,
 ```
 PBA2023 <- load_pba2023()
 ```
+![PBAData Logo](https://i.ibb.co/RyT38vj/PBA.jpg)  
