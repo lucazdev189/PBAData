@@ -18,7 +18,7 @@ player_summary <- function(dataset, player) {
     aboveorbelow_avg = requested_player$Average - mean(dataset$Average)
   )
   
-  # Check if 'Joined' column exists and add it if true
+  # Check if 'Joined' column exists and add it if its true
   if ("Joined" %in% colnames(dataset)) {
     summarize_args$year_joined <- requested_player$Joined
   }

@@ -1,3 +1,8 @@
+# PBAData 0.1.5
+
+## Major Changes
+* Added new function, scatterplot_average() and its tests.
+
 # PBAData 0.1.4
 
 ## Major Changes

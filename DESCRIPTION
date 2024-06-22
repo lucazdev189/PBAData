@@ -1,7 +1,7 @@
 Package: PBAData
 Type: Package
 Title: Adds PBA datasets and functions
-Version: 0.1.4
+Version: 0.1.5
 Author: lucazdev189
 Maintainer: Lucas E <erinlucaspogi@outlook.com>
 Description: Adds PBA Bowling-related datasets and functions to make analyses easier and more efficient
