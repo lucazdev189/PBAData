@@ -16,9 +16,9 @@ scatterplot_average(
 
 \item{y_axis}{The y axis values to be plotted.}
 
-\item{linear_regression}{Adds a linear regression line. Set to FALSE on default.}
+\item{linear_regression}{Adds a linear regression line. Set to FALSE by default.}
 
-\item{lregression_method}{Method used to do the linear regression line. Set to lm on default}
+\item{lregression_method}{Method used to do the linear regression line. Set to lm by default}
 }
 \description{
 Scatterplots the average of the player against a chosen factor (earnings by default)
