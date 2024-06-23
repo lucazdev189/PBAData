@@ -2,7 +2,8 @@
 [![](https://img.shields.io/github/last-commit/lucazdev189/PBAData.svg)](https://github.com/lucazdev189/PBAData/commits/main)
 [![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![](https://img.shields.io/github/languages/code-size/lucazdev189/PBAData.svg)](https://github.com/lucazdev189/PBAData)
-[![License: Artistic-2.0](https://img.shields.io/badge/license-Artistic--2.0-blue.svg)](https://cran.r-project.org/web/licenses/Artistic-2.0)  
+[![License: Artistic-2.0](https://img.shields.io/badge/license-Artistic--2.0-blue.svg)](https://cran.r-project.org/web/licenses/Artistic-2.0)
+[![R build status](https://github.com/lucazdev189/PBAData/workflows/R-CMD-check/badge.svg)](https://github.com/lucazdev189/PBAData/actions)  
 Out of boredom, I have decided to make this simple package that gives everyone an easy way to access Professional Bowlers Association data.
 
 ## Installing the package
