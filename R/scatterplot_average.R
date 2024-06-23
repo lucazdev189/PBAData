@@ -10,11 +10,9 @@
 #' @importFrom ggthemes theme_excel
 #' @export
 scatterplot_average <- function(dataset, y_axis="Earnings", linear_regression=FALSE, lregression_method="lm") {
-  # Stores average in a variable
-  x_axis <- dataset$Average
   
   # Scatterplots the given x and y values without the linear regression
-  plot <- ggplot2::ggplot(data=dataset, aes_string(x=x_axis, y=y_axis)) +
+  plot <- ggplot2::ggplot(data=dataset, aes(x=Average, y=!!sym(y_axis))) +
     ggplot2::geom_point() +
     ggthemes::theme_excel()
   
