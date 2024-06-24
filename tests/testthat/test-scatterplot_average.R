@@ -1,6 +1,7 @@
 library(ggplot2)
 library(ggthemes)
 library(PBAData)
+library(tibble)
 
 test_that("basic functionality", {
   sample_data <- data.frame(Average = c(1, 2, 3, 4, 5), Earnings = c(10, 15, 20, 25, 30))

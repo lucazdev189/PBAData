@@ -1,5 +1,6 @@
 library(PBAData)
 library(dplyr)
+library(tibble)
 
 test_that("returns correct stuff", {
   pba <- load_pba2023()
