@@ -6,7 +6,7 @@
 #' @param y_axis The y axis values to be plotted.
 #' @param linear_regression Adds a linear regression line. Set to FALSE by default.
 #' @param lregression_method Method used to do the linear regression line. Set to lm by default
-#' @importFrom rlang ::
+#' @importFrom rlang quo
 #' @importFrom ggplot2 ggplot geom_point geom_smooth
 #' @importFrom ggthemes theme_excel
 #' @export
