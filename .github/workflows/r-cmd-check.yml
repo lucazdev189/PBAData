@@ -17,13 +17,9 @@ jobs:
       matrix:
         config:
           - {os: macos-latest,   r: 'release'}
-
           - {os: windows-latest, r: 'release'}
-          # Use 3.6 to trigger usage of RTools35
           - {os: windows-latest, r: '3.6'}
-          # use 4.1 to check with rtools40's older compiler
           - {os: windows-latest, r: '4.1'}
-
           - {os: ubuntu-latest,   r: 'devel', http-user-agent: 'release'}
           - {os: ubuntu-latest,   r: 'release'}
           - {os: ubuntu-latest,   r: 'oldrel-1'}
@@ -46,10 +42,13 @@ jobs:
           http-user-agent: ${{ matrix.config.http-user-agent }}
           use-public-rspm: true
 
-      - uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          extra-packages: any::rcmdcheck
-          needs: check
+      - name: Install dependencies
+        run: |
+          if [[ "${{ matrix.config.r }}" == "3.6" ]]; then
+            R -e "install.packages('rcmdcheck', repos = 'https://cloud.r-project.org')"
+          else
+            R -e "pak::pkg_install(c('any::rcmdcheck', 'any::sessioninfo'))"
+          fi
 
       - uses: r-lib/actions/check-r-package@v2
         with:
