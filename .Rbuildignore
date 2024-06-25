@@ -1,3 +1,6 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^R/testthis-testers\.R$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
