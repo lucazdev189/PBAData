@@ -42,13 +42,17 @@ jobs:
           http-user-agent: ${{ matrix.config.http-user-agent }}
           use-public-rspm: true
 
-      - name: Install dependencies
-        run: |
-          if [[ "${{ matrix.config.r }}" == "3.6" ]]; then
-            R -e "install.packages('rcmdcheck', repos = 'https://cloud.r-project.org')"
-          else
-            R -e "pak::pkg_install(c('any::rcmdcheck', 'any::sessioninfo'))"
-          fi
+      - name: Install pak for R versions >= 4.0
+        if: startsWith(matrix.config.r, '4') || startsWith(matrix.config.r, 'devel') || startsWith(matrix.config.r, 'release') || startsWith(matrix.config.r, 'oldrel')
+        run: R -e "install.packages('pak', repos = 'https://cloud.r-project.org')"
+
+      - name: Install dependencies for R 3.6
+        if: matrix.config.r == '3.6'
+        run: R -e "install.packages('rcmdcheck', repos = 'https://cloud.r-project.org')"
+
+      - name: Install dependencies for R >= 4.0
+        if: startsWith(matrix.config.r, '4') || startsWith(matrix.config.r, 'devel') || startsWith(matrix.config.r, 'release') || startsWith(matrix.config.r, 'oldrel')
+        run: R -e "pak::pkg_install(c('any::rcmdcheck', 'any::sessioninfo'))"
 
       - uses: r-lib/actions/check-r-package@v2
         with:
